@@ -1,11 +1,13 @@
 import React from 'react';
 import './index.css';
-
+import {Link} from 'react-router-dom';
 const Nav = props =>(
   <ul className='nav'>
     {
       props.list.map((ele, index)=>(
-        <li key={index}>{ele.text}</li>
+        <Link to={ele.url} key={index}>
+          <li>{ele.text}</li>
+        </Link>
       ))
     }
   </ul>

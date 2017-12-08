@@ -3,10 +3,10 @@ import Nav from './component/nav';
 import Welcome from './page/welcome';
 import Goods from './page/goods';
 import './App.css';
-
+import {Route} from 'react-router-dom';
 const LIST = [{
     text: 'welcome',
-    url: '/'
+    url: '/welcome'
 }, {
     text: 'goods',
     url: '/goods'
@@ -20,8 +20,8 @@ class App extends Component {
                     <Nav list={LIST} />
                 </div>
                 <div className="conent">
-                    <Welcome />
-                    <Goods />
+                  <Route path='/welcome' component={Welcome}/>
+                  <Route path='/goods' component={Goods}/>
                 </div>
             </div>
         );

@@ -1,10 +1,14 @@
-import {handleActions} from 'redux-actions';
 
-export const goods = handleActions({
-    GET_GOODS: (state, action) => ({
+export const goods = (state, action) => {
+  switch (action.type){
+    case 'GET_GOODS':
+      return {
         ...state,
         data: action.payload
-    })
-}, {
-    data: []
-});
+      };
+    default:
+      return {
+        data:[]
+      }
+  }
+}

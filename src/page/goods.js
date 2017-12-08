@@ -38,8 +38,10 @@ class Goods extends Component {
     }
 }
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = (state) => ({
     goods: state.goods.data
 });
 
+
 export default connect(mapStateToProps)(Goods);
+// export default Goods
