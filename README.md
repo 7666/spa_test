@@ -11,4 +11,19 @@ react的单页面应用，用到了redux进行全局状态管理，用到了rout
 
 运行，npm start 即可。
 
+# 完成以后页面如下
 
+## 首页
+![](http://oujvmc3la.bkt.clouddn.com/spa.PNG)
+
+## welcome页面
+
+点击左侧导航栏中的welcome即可跳转至该页面
+
+![](http://oujvmc3la.bkt.clouddn.com/spa2.PNG)
+
+## goods页面
+
+点击左侧导航栏中的goods即可跳转至该页面
+
+![](http://oujvmc3la.bkt.clouddn.com/spa3.PNG)
